@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="js no-touchevents" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Explorer</title>
+  <link async rel="stylesheet" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,600,300italic,600italic" rel="stylesheet" type="text/css">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#29BDBB">
+  <link rel="icon" sizes="192x192" href="./launcher-icon-8x.png">
+</head>
+
+<body>
+<header>
+  <div>
+    <h3>GitHub profiles</h3>
+  </div>
+</header>
+<div class="container">
+  <div id="main" class="content">
+    <div class="accounts-list" data-bind="foreach: accounts">
+      <div class="item">
+        <div>
+          <img width="32px" height="32px" data-bind="attr:{src: avatar}" />
+          <span class="name" data-bind="html: name"></span>
+          <div>Name: <span class="login" data-bind="html: name"></span></div>
+          <div>Location: <span class="location" data-bind="html: location"></span></div>
+          <div>Followers: <span class="followers" data-bind="html: followers"></span></div>
+          <div data-bind="html: bio"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./js/vendor/knockout-3.3.0.js"></script>
+<script src="./js/accounts.js"></script>
+<script src="./js/page.js"></script>
+<script src="./js/app.js"></script>
+</body>
+
+</html>
