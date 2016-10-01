@@ -30,7 +30,7 @@ var Page = (function() {
                     var offlineMessageElement = document.createElement("div");
                     offlineMessageElement.setAttribute("id", "offline");
                     offlineMessageElement.innerHTML = request.responseText;
-                    document.getElementById("main").appendChild(offlineMessageElement);
+                    document.getElementById("offline-content").appendChild(offlineMessageElement);
                 } else {
                     // error retrieving file
                     console.warn('Error retrieving offline.html');

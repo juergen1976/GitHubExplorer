@@ -81,7 +81,7 @@ var Accounts = (function() {
     return {
         loadData: function() {
             document.querySelector(".accounts-list").classList.add('loading');
-            var accountNames = ['adobe', 'royfielding', 'eclipse', 'kentbeck'];
+            var accountNames = ['kentbeck', 'royfielding', 'eclipse'];
             var promises = [];
             var results = [];
             accountNames.forEach(function (name) {

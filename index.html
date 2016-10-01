@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="js no-touchevents" lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,6 @@
   <meta name="theme-color" content="#29BDBB">
   <link rel="icon" sizes="192x192" href="./launcher-icon-8x.png">
 </head>
-
 <body>
 <header>
   <div>
@@ -20,14 +18,15 @@
 </header>
 <div class="container">
   <div id="main" class="content">
+    <span id="offline-content"></span>
     <div class="accounts-list" data-bind="foreach: accounts">
       <div class="item">
         <div>
           <img width="32px" height="32px" data-bind="attr:{src: avatar}" />
           <span class="name" data-bind="html: name"></span>
-          <div>Name: <span class="login" data-bind="html: name"></span></div>
-          <div>Location: <span class="location" data-bind="html: location"></span></div>
-          <div>Followers: <span class="followers" data-bind="html: followers"></span></div>
+          <div>Name: <span data-bind="html: name"></span></div>
+          <div>Location: <span data-bind="html: location"></span></div>
+          <div>Followers: <span data-bind="html: followers"></span></div>
           <div data-bind="html: bio"></div>
         </div>
       </div>
