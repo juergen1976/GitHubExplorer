@@ -48,6 +48,7 @@ var Accounts = (function() {
                 var vm = new AccountViewModel();
                 vm.login = data.title;
                 vm.id = data.id;
+                vm.blog = data.blog;
                 vm.avatar = data.avatar_url;
                 vm.name = data.name;
                 vm.bio = data.bio;
@@ -81,7 +82,7 @@ var Accounts = (function() {
     return {
         loadData: function() {
             document.querySelector(".accounts-list").classList.add('loading');
-            var accountNames = ['kentbeck', 'royfielding', 'eclipse'];
+            var accountNames = ['kentbeck', 'royfielding', 'eclipse', 'juergen1976', 'johnpapa', 'jakearchibald', 'robdodson', 'torvalds', 'addyosmani'];
             var promises = [];
             var results = [];
             accountNames.forEach(function (name) {
